@@ -1,0 +1,33 @@
+{
+  "name": "alpaca-backtrader-api",
+  "description": "",
+  "scripts": {
+  },
+  "env": {
+    "APCA_API_BASE_URL": {
+      "required": true
+    },
+    "APCA_API_KEY_ID": {
+      "required": true
+    },
+    "APCA_API_SECRET_KEY": {
+      "required": true
+    },
+    "PAPERTRAIL_API_TOKEN": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "herokuconnect",
+    "papertrail",
+    "heroku-postgresql"
+  ],
+  "stack": "heroku-18",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
